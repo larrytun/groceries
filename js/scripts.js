@@ -14,9 +14,17 @@ $(document).ready(function() {
     var listCaps = list1.map(function(list) { return list.toUpperCase();
     });
 
-    alert(listCaps.sort());
+    var alphaList = list1.sort();
 
-
+    document.write(
+      "<ul>"
+        + "<li>" + alphaList[0] + "</li>"
+        + "<li>" + alphaList[1] + "</li>"
+        + "<li>" + alphaList[2] + "</li>"
+        + "<li>" + alphaList[3] + "</li>"
+          +
+      "</ul>"
+      );
 
 
   });
